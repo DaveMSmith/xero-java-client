@@ -18,6 +18,11 @@
       <jaxb:property name="validationStatus" />
     </jaxb:bindings>
   </jaxb:bindings>
+  <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/ContactGroup.xsd" node="/xs:schema">
+    <jaxb:bindings node="/xs:schema/xs:complexType[@name='ContactGroup']/xs:attribute[@name='status']">
+      <jaxb:property name="validationStatus" />
+    </jaxb:bindings>
+  </jaxb:bindings>
   <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/CreditNote.xsd" node="/xs:schema">
     <jaxb:bindings node="/xs:schema/xs:complexType[@name='CreditNote']/xs:attribute[@name='status']">
       <jaxb:property name="validationStatus" />
@@ -38,13 +43,33 @@
       <jaxb:property name="validationStatus" />
     </jaxb:bindings>
   </jaxb:bindings>
+  <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/LinkedTransaction.xsd" node="/xs:schema">
+    <jaxb:bindings node="/xs:schema/xs:complexType[@name='LinkedTransaction']/xs:attribute[@name='status']">
+      <jaxb:property name="validationStatus" />
+    </jaxb:bindings>
+  </jaxb:bindings>
   <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/ManualJournal.xsd" node="/xs:schema">
     <jaxb:bindings node="/xs:schema/xs:complexType[@name='ManualJournal']/xs:attribute[@name='status']">
       <jaxb:property name="validationStatus" />
     </jaxb:bindings>
   </jaxb:bindings>
+  <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/Overpayment.xsd" node="/xs:schema">
+    <jaxb:bindings node="/xs:schema/xs:complexType[@name='Overpayment']/xs:attribute[@name='status']">
+      <jaxb:property name="validationStatus" />
+    </jaxb:bindings>
+  </jaxb:bindings>
   <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/Payment.xsd" node="/xs:schema">
     <jaxb:bindings node="/xs:schema/xs:complexType[@name='Payment']/xs:attribute[@name='status']">
+      <jaxb:property name="validationStatus" />
+    </jaxb:bindings>
+  </jaxb:bindings>
+  <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/Prepayment.xsd" node="/xs:schema">
+    <jaxb:bindings node="/xs:schema/xs:complexType[@name='Prepayment']/xs:attribute[@name='status']">
+      <jaxb:property name="validationStatus" />
+    </jaxb:bindings>
+  </jaxb:bindings>
+  <jaxb:bindings schemaLocation="../../../../../XeroAPI-Schemas/v2.00/PurchaseOrder.xsd" node="/xs:schema">
+    <jaxb:bindings node="/xs:schema/xs:complexType[@name='PurchaseOrder']/xs:attribute[@name='status']">
       <jaxb:property name="validationStatus" />
     </jaxb:bindings>
   </jaxb:bindings>

@@ -33,35 +33,37 @@ libraryDependencies ++= Seq(
 EclipseKeys.projectFlavor := EclipseProjectFlavor.Java
 EclipseKeys.withSource := true
 
+publishTo := Some(Resolver.file("file",  new File(Path.userHome.absolutePath+"/.m2/repository")))
+
 // Publish to Maven Central with publishSigned task
-publishMavenStyle := true
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (isSnapshot.value)
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-}
-publishArtifact in Test := false
-pomIncludeRepository := { _ => false }
-pomExtra := (
-  <url>https://github.com/connectifier/xero-java-client</url>
-  <licenses>
-    <license>
-      <name>The Apache Software License, Version 2.0</name>
-      <url>https://github.com/connectifier/xero-java-client/blob/master/LICENSE</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  <scm>
-    <url>https://github.com/connectifier/xero-java-client</url>
-    <connection>git@github.com:connectifier/xero-java-client.git</connection>
-  </scm>
-  <developers>
-    <developer>
-      <id>benmccann</id>
-      <name>Benjamin McCann</name>
-      <organization>Connectifier, Inc.</organization>
-      <organizationUrl>https://www.connectifier.com/</organizationUrl>
-    </developer>
-  </developers>)
+//publishMavenStyle := true
+//publishTo := {
+//  val nexus = "https://oss.sonatype.org/"
+//  if (isSnapshot.value)
+//    Some("snapshots" at nexus + "content/repositories/snapshots")
+//  else
+//    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+//}
+//publishArtifact in Test := false
+//pomIncludeRepository := { _ => false }
+//pomExtra := (
+//  <url>https://github.com/connectifier/xero-java-client</url>
+//  <licenses>
+//    <license>
+//      <name>The Apache Software License, Version 2.0</name>
+//      <url>https://github.com/connectifier/xero-java-client/blob/master/LICENSE</url>
+//      <distribution>repo</distribution>
+//    </license>
+//  </licenses>
+//  <scm>
+//    <url>https://github.com/connectifier/xero-java-client</url>
+//    <connection>git@github.com:connectifier/xero-java-client.git</connection>
+//  </scm>
+//  <developers>
+//    <developer>
+//      <id>benmccann</id>
+//      <name>Benjamin McCann</name>
+//      <organization>Connectifier, Inc.</organization>
+//      <organizationUrl>https://www.connectifier.com/</organizationUrl>
+//    </developer>
+//  </developers>)
